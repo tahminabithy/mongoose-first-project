@@ -15,13 +15,13 @@ export interface Student{
     permanentAddress: string;
     guardian: TGuardian;
     localGuardian: TLocalGuardian;
-    profileImg?: string;
+    profileImg?:string;
     isActive: 'active' | 'blocked';
-    isDeleted: boolean;
+    // isDeleted: boolean;
 }
 export interface TUserName {
     firstName: string;
-    middleName: string;
+    middleName?: string;
     lastName: string;
   };
   

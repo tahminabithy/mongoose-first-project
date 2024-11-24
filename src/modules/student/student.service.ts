@@ -15,9 +15,14 @@ const createStudentInDb = async (studentData:Student)=>{
     const result = await studentModel.findOne({id:id});
     return result;
  }
+ const updateStudentAfterDelete = async (id:string)=>{
+    const result = await studentModel.updateOne({id:id},{isDeleted:true});
+    return result;
+ }
 
 export const studentService ={
     createStudentInDb,
     getStudentFromDb,
-    getSingleStudentFromDb
+    getSingleStudentFromDb,
+    updateStudentAfterDelete
 }
