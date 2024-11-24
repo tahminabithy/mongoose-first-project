@@ -28,5 +28,6 @@ function main() {
         }
     });
 }
+main();
 // adminUser
 // 2fDmGFvRpc04DxOI
